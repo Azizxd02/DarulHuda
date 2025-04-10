@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS santri;
+
+CREATE TABLE santri (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nama_lengkap TEXT NOT NULL,
+    username TEXT UNIQUE NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL
+);
